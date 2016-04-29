@@ -1,5 +1,5 @@
 
-# Add and remove attachments to an item in a compose form in Outlook
+# Add and remove attachments to an item in a compose form in Outlook1
 
 You can use the [addFileAttachmentAsync](../../reference/outlook/Office.context.mailbox.item.md) and [addItemAttachmentAsync](../../reference/outlook/Office.context.mailbox.item.md) methods to attach a file and an Outlook item respectively to the item that the user is composing. Both are asynchronous methods, which means execution can go on without waiting for the add-attachment action to complete. Depending on the original location and size of the attachment being added, the add-attachment asynchronous call may take a while to complete. If there are tasks that depend on the action to complete, you should carry out those tasks in a callback method. This callback method is optional and is invoked when the uploading of the attachment is complete. The callback method takes an [AsyncResult](http://dev.outlook.com/reference/add-ins/simple-types.md) object as an output parameter that provides any status, error, and returned value from the add-attachment action. If the callback requires any extra parameters, you can specify them in the optional _options.aysncContext_ parameter. _options.asyncContext_ can be of any type that your callback method expects.
 
