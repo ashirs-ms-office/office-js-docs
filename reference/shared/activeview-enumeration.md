@@ -1,5 +1,5 @@
 
-# ActiveView enumeration
+# 2ActiveView enumeration
 Specifies the state of the active view of the document, for example, whether the user can edit the document.
 
 |||
